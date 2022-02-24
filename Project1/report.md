@@ -4,15 +4,22 @@
 
 ## 2
 ### a)
->Which PyTorch method(s) correspond to the tasks described in section 2?
 
 Formula 5 from secrtion 2 is implemented with the following code:
 
 ```python 
 dz_l = (-2 * (y_true - y_pred)) * model.df[l](model.z[l])
 ```
-Formula 5 from secrtion 2 is implemented:
-```py
+Formula 6 from secrtion 2 is implemented with the following code:
+
+```python
+dz_l = torch.mm(dz_prev, model.fc[str(l+1)].weight.data) * model.df[l](model.z[l])
+```
+Formula 4 from secrtion 2 is implemented with the following code:
+```python
+dw_l = (1/batch_size) * torch.mm(dz_l.t(), model.a[l-1]) 
+db_l = (1/batch_size) * torch.sum(dz_l, dim=0, keepdims=True) 
+db_l = torch.flatten(db_l)
 ```
 
 With a pure pytorch implementation we would use `loss.backward()` and `optimizer.step()`  
