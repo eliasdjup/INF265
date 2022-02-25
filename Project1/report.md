@@ -44,5 +44,53 @@ Regularization is a technique used to reduce the errors by fitting the function 
 ### f)
 > Report the different parameters used in section 3, question 8., the selected parameters in question 9. as well as the evaluation of your selected model.
 
+#### Global
+batch_size =  256
+n_epoch =  30
+loss_fn =  nn.CrossEntropyLoss()
+seed =  265
+
+#### Model 1
+lr=0.01
+weight_decay=0
+momentum=0
+
+Accuracy train: 0.88
+Accuracy val: 0.83
+
+#### Model 2
+lr=0.01
+weight_decay=0.01
+momentum=0
+
+Accuracy train: 0.86
+Accuracy val: 0.83
+
+#### Model 3
+lr=0.01
+weight_decay=0
+momentum=0.9
+
+Accuracy train: 0.90
+Accuracy val: 0.81
+
+#### Model 4
+lr=0.01
+weight_decay=0.001
+momentum=0.9
+
+Accuracy train: 0.96
+Accuracy val: 0.84
+**Accuracy test: 0.85**
+
+#### Model 5
+lr=0.02
+weight_decay=0.01
+momentum=0.8
+
+Accuracy train: 0.88
+Accuracy val: 0.81
+
+
 ### g)
->Comment your results. In case you do not get expected results, try to give potential reasons that would explain why your code does not work and/or your results differ.
+We get expected results from our model with almos the same accuracy for validation (84%) and test (85%). This means we can conclude that our model will generalize well, by correctly labeling 85% og unseen images of birds or planes. 
