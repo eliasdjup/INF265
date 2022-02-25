@@ -77,11 +77,15 @@ optimizer = optim.SGD(model.parameters(), lr=0.01)
 
 ### d)
 
-Momentum is an extension to the gradient descent optimization algorithm that allows the search to build inertia in a direction in the search space and overcome the oscillations of noisy gradients and cost across flat sports of the search space. It is designed to accelerate the optimization process. One problem with the gradient descent algorithm is that the progression of the search can bounce around the search space based on the gradient. This can really slow down the process of the search, especially for those optimization problems where the broader trend or shape of the search space is more useful than specific gradients along the way. Momentum involves adding an additional hyperparameter that controls the amount of history (momentum) to include in the update equation. The value of a hyperparameter is defined in the range 0.0 to 0.1 and often has a value close to 1.0, i.e. 0.9. A momentum of 0.0 is the same as gradient descent without momentum.
+Momentum is an extension to the gradient descent optimization algorithm. It allows the search to build inertia in a direction in the search space and overcome the oscillations of noisy gradients and cost across flat sports of the search space. The momentum is designed to accelerate the optimization process. One problem with the gradient descent algorithm is that the progression of the search can bounce around the search space based on the gradient. This can slow down the process of the search, especially for those optimization problems where the broader trend or shape of the search space is more useful than specific gradients along the way. 
+
+Momentum involves adding an additional hyperparameter that controls the amount of history (momentum) to include in the update equation. The value of a hyperparameter is defined in the range 0.0 to 0.1 and often has a value close to 1.0, i.e. 0.9. A momentum of 0.0 is the same as gradient descent without momentum.
 
 ### e)
 
-Regularization is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting. The commonly used regularization techniques are L1 regularization, L2 regularization and Dropout regularization. In our code we use L2 regularization and the L2 is also called Ridge Regression. L2 uses "squared magnitude" of coefficient as penalty term of the loss function.
+Regularization is a technique used to reduce the errors by fitting the function appropriately on the given training set and avoid overfitting.
+
+ The commonly used regularization techniques are L1 regularization, L2 regularization and Dropout regularization. In our code we use L2 regularization and the L2 regularization is also called Ridge Regression. L2regularization  uses "squared magnitude" of coefficient as penalty term of the loss function.
 
 ### f)
 
