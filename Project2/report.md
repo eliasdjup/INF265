@@ -23,6 +23,13 @@ For batch size and learning rate we went with 128 and 0.005 respectivly. We saw 
 
 ![](./assets/MyModel_epoch.png)
 
+LeNet performance:
+![](./assets/lenet_performance.png)
+
+
+MyModel performance:
+![](./assets/mymodel_performance.png)
+
 
 ### Training
 
@@ -47,25 +54,22 @@ For batch size and learning rate we went with 128 and 0.005 respectivly. We saw 
 
 ### Models and hyper-parameters utilized
 
-### Performance of selected model
-
-- accuracy
-- IoU
-- mean between of accuracy and IoU???
 
 ### Plots
+![](./assets/AlexNet_detection.png)
+![](./assets/training_loss_detection_mymodel.png)
+![](./assets/detection_performance.png)
 
-#### Training
+### Training
 
-showing the true bounding boxes and label compared to the predicted bounding
-boxes and labels
+![](./assets/detection_train.png)
 
-#### Validation
 
-showing the true bounding boxes and label compared to the predicted bounding
-boxes and labels
+### Validation
+![](./assets/detection_val.png)
 
-### Results
+### Results and performance of selected model
 
-In case you do not get expected results, try to give potential reasons
-that would explain why your code does not work and/or your results differ.
+![](./assets/detection_mymodel_test_performance.png)
+
+![](./assets/detection_test.png)
