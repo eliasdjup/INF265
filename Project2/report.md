@@ -7,7 +7,7 @@ We (igu011 and edj001) have worked very closely and paired programmed this proje
 ## Collabaration
 
 We have had discussions with Alvar Hønsi during this project. We have not shared code but exchanged ideas and sources on how to solve the subproblems that come about during this project.
-
+@
 ## Object Localization
 
 ### Explanation of approach, design choices, models, and hyper-parameters utilized
