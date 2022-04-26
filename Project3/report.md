@@ -15,8 +15,8 @@ Comment your results.
 ### 2.1.5: 
 Comment your results.
 
-### 2.1.6: 
-Report both plots and their corresponding selections for some meaningful clusters.
+### 2.1.6:
+Report both plots and their corresponding selections for some meaningful clusters. (Plots)
 
 ## Conjugating be and have 
 ### 2.2.2:
@@ -38,3 +38,19 @@ Report the performance of your selected model.
 
 ### 4.
 Comment your results. In case you do not get expected results, try to give potential reasons that would explain why your code does not work and/or your results differ.
+
+## Plots - vizulazing embedding space (2.1.6.)
+### Happiness
+![](./visualizations/happiness.png)
+
+### Looked
+![](./visualizations/looked.png)
+
+### Princess
+![](./visualizations/princess.png)
+
+### Sleep
+![](./visualizations/sleep.png)
+
+### Work
+![](./visualizations/work.png)
